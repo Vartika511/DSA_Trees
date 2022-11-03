@@ -1,0 +1,16 @@
+def getOneBits(n):
+    # Write your code here
+    # Write your code here
+    arr = []
+    while (n != 1):
+     arr.append(n%2);
+     n = int(n / 2);
+    arr.append(1)
+    arr = arr[::-1]
+    arr2 = []
+    for i in range(len(arr)):
+        if arr[i] == 1:
+            arr2.append(i+1)
+    arr2 = arr2[::-1] 
+    arr2.append(len(arr2))
+    return arr2[::-1];
