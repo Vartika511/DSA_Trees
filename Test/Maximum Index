@@ -1,0 +1,29 @@
+function maxIndex(steps, badIndex) {
+    // Write your code here
+     
+        var max=0;      
+        for(var i=1;i<=steps;i++)        
+         max+=i;         
+        var currentInd=max;         
+        var step=steps;         
+        while(true) {               
+             while(currentInd>0 && steps>0) {                       
+                 currentInd-=steps;                         
+                 if(currentInd==badIndex)                               
+                 currentInd+=steps;                         
+                 
+                 steps--;         }                 
+                 if(currentInd<=0) {                        
+                     return max;             
+                      break;         
+                      }                 
+                 else {                         
+                     steps=step;                         
+                     currentInd=max-1;                       
+                     max--;               
+                     if(currentInd==badIndex) {                                 
+                         currentInd=max-1;                                  
+                         max--;             }         }     }     
+    return -1; 
+
+}
