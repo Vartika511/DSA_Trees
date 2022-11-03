@@ -1,0 +1,21 @@
+def maximumContainers(str_array):
+    for li in str_array:#loop which traverses over the string array
+        starting_budget=li[0]
+        cost=li[1]
+        m=li[2]
+        containers_bought=starting_budget//cost#no of containers_bought with the starting budget
+        sum1=containers_bought#adding containers_bought to the sum1
+        while(True):
+            sum1=sum1+(containers_bought//m)#adding new containers formed by adding m containers_bought
+            containers_bought=(containers_bought//m)+(containers_bought%m)
+            if(containers_bought>0 and containers_bought<m):#if we cannot form new containers by adding old containers_bought
+            #then break
+                break
+        print("maximum no of containers manufacturer can get is:")
+        print(sum1)    
+            
+t=int(input())#asking the user for number of test cases
+str_array=[]#empty string array
+for i in range(t):
+    str_array.append(list(map(int,input().split(" "))))#taking string of 3 numbers and mapping it to int
+maximumContainers(str_array)#calling maximumContainers function
