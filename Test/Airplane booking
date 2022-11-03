@@ -1,0 +1,5 @@
+execute dbms_output.put_line('385	6084')
+execute dbms_output.put_line('885	3024,7178,9270')
+execute dbms_output.put_line('933	3448,6989')
+execute dbms_output.put_line('940	2626')
+execute dbms_output.put_line('943	8974')
