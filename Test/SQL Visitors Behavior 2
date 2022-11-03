@@ -1,0 +1,7 @@
+(select "Q1'21 sell=26; buy=23; other=16")
+UNION ALL
+(select "Q2'21 buy=29; sell=21; other=14")
+UNION ALL
+(select "Q3'21 other=25; sell=25; buy=18")
+UNION ALL
+(select "Q4'21 other=29; buy=18; sell=17")
