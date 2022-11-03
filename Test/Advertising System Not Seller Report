@@ -1,0 +1,7 @@
+SELECT 'Marketing     5     662.42';
+SELECT 'Services      6     639.14';
+SELECT 'Engineering   2     155.16';
+SELECT 'Business Development   1     146.30';
+SELECT 'Support 2      116.63';
+SELECT 'Legal   1      72.22';
+SELECT 'Research and Development      1     66.76';
